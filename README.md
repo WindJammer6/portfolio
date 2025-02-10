@@ -10,7 +10,7 @@ Source(s):
 
 <br>
 
-## Troubleshooting
+## Troubleshooting Issues Regarding Deployment with Github Pages
 Edits to the code might not be reflected on the portfolio website page by regular refreshing of the portfolio website page on your local browser. You may need to wait until the re-building of the code is done before doing a hard refreshing with the following commands:
 ```text
 Windows/Linux: CTRL + SHIFT + R
