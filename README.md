@@ -4,3 +4,13 @@ Source(s):
 - https://github.com/sbenhoff007/portfolio (HoffsTech content creator, Shelley Benhoff, Github portfolio source code) (with reference)
 
 Deployed with [Github Pages](https://pages.github.com/)
+
+<br>
+
+# Troubleshooting
+Edits to the code might not show up by regular refreshing of the portfolio website page. You need to do a hard refreshing with either of the following commands:
+```text
+Windows/Linux: CTRL + SHIFT + R
+Mac: CMD + SHIFT + R
+Open in incognito mode to bypass cache.
+```
