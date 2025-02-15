@@ -1,12 +1,12 @@
 # My Portfolio Website 
 Finding a job and securing an interview with a good resume will always be an important part of a programmers journey. Without a doubt, a personal portfolio website is one way to demonstrate one's programming ability, as well as to showcase oneself. So here's my personal portfolio website: https://windjammer6.github.io/portfolio/
 
-This Github repository is hosting the codes for my personal portfolio website. Code template taken from [Shelley Benhoff's Github's personal portfolio website template source code](https://github.com/sbenhoff007/portfolio) (credits to her :)) and is further built upon for my personal use. This Github repository hosting the codes for my personal portfolio website is deployed with [Github Pages](https://pages.github.com/), you can see how this is done from this Youtube video by HoffsTech (link: https://www.youtube.com/watch?v=CykufIPK_6o&t=193s). 
+This Github repository is hosting the codes for my personal portfolio website. Code template taken from [Shelley Benhoff's Github's personal portfolio website template source code](https://github.com/sbenhoff007/portfolio) and developed by [Nisar Hassan](https://github.com/nisarhassan12) (you can find his Github by clicking the link) (credits to them :)) and is further built upon for my personal use. This Github repository hosting the codes for my personal portfolio website is deployed with [Github Pages](https://pages.github.com/), you can see how this is done from this Youtube video by HoffsTech (link: https://www.youtube.com/watch?v=CykufIPK_6o&t=193s). 
 
 
 Source(s):  
 - https://www.youtube.com/watch?v=CykufIPK_6o&t=193s (Youtube video titled: 'How To Create a GitHub Portfolio in 5 minutes using GitHub Pages: A Step by Step Guide', by HoffsTech)
-- https://github.com/sbenhoff007/portfolio (HoffsTech content creator,Shelley Benhoff's Github's personal portfolio website template source code)
+- https://github.com/sbenhoff007/portfolio (HoffsTech content creator, Shelley Benhoff's Github's personal portfolio website template source code)
 
 <br>
 
