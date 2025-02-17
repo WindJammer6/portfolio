@@ -46,27 +46,29 @@ window.addEventListener("scroll", () => {
 /* -----------------------------------------
    Function to sort the table when clicking headers
  ---------------------------------------- */
-function sortTable(n) {
+// Function to sort the table when clicking headers
+function sortTable(columnIndex) {
     let table = document.getElementById("competitions-table");
-    let rows = Array.from(table.rows).slice(1);
-    let switching = true;
-    let direction = "asc";
+    let tbody = table.querySelector("tbody");
+    let rows = Array.from(tbody.rows);
+    let ascending = table.dataset.sortOrder !== "asc";
 
-    while (switching) {
-        switching = false;
-        for (let i = 1; i < rows.length - 1; i++) {
-            let x = rows[i].cells[n].textContent.toLowerCase();
-            let y = rows[i + 1].cells[n].textContent.toLowerCase();
+    rows.sort((rowA, rowB) => {
+        let cellA = rowA.cells[columnIndex].textContent.trim();
+        let cellB = rowB.cells[columnIndex].textContent.trim();
 
-            if ((direction === "asc" && x > y) || (direction === "desc" && x < y)) {
-                rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-                switching = true;
-            }
-        }
-        if (!switching && direction === "asc") {
-            direction = "desc";
-            switching = true;
-        }
-    }
+        // Try converting to numbers for numeric columns
+        let a = isNaN(cellA) ? cellA.toLowerCase() : parseInt(cellA, 10);
+        let b = isNaN(cellB) ? cellB.toLowerCase() : parseInt(cellB, 10);
+
+        return ascending ? (a > b ? 1 : -1) : (a < b ? 1 : -1);
+    });
+
+    // Toggle sorting order
+    table.dataset.sortOrder = ascending ? "desc" : "asc";
+
+    // Update table rows
+    tbody.innerHTML = "";
+    rows.forEach(row => tbody.appendChild(row));
 }
 
