@@ -297,12 +297,6 @@ body:not(.user-is-tabbing) a:focus {
     font-family: sans-serif;
 }
 
-.button-container {
-    display: flex;      /* Enables flexbox */
-    justify-content: left;  /* Flush buttons to the left */
-    gap: 15px;         /* Adds space between buttons */
-}
-
 /* ----- Back to Top ----- */
 
 .back-to-top {
