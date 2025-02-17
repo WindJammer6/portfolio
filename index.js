@@ -46,7 +46,6 @@ window.addEventListener("scroll", () => {
 /* -----------------------------------------
    Function to sort the table when clicking headers
  ---------------------------------------- */
-// Function to sort the table when clicking headers
 function sortTable(columnIndex, tableName) {
     let table = document.getElementById(tableName);
     let tbody = table.querySelector("tbody");
