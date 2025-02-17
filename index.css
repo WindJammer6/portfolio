@@ -581,20 +581,16 @@ table {
 }
 
 /* Table header */
-thead tr {
-    background-color: #0044cc;  /* Dark Blue */
-    color: white;
-    position: sticky;
-    top: 0;
+table th {
+    background-color: #e0e0e0 !important;  /* Slightly darker grey */
+    color: black !important;  /* Ensure text is black */
+    font-weight: bold;
+    padding: 10px;
+    text-align: left;
+    border-bottom: 2px solid #ccc;
+    cursor: pointer; /* Indicate interactivity */
 }
 
-/* Header text */
-th {
-    background-color: #f0f0f0 !important;  /* Light grey background */
-    color: black !important;  /* Black text */
-    font-weight: bold;
-    cursor: pointer; /* Make it clear that it's clickable */
-}
 
 /* Table rows */
 td {
