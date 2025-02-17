@@ -509,6 +509,23 @@ body:not(.user-is-tabbing) a:focus {
 /* ----- Clients ----- */
 /* --------------------------------------- */
 
+.education__info {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Space between logos */
+    flex-wrap: wrap; /* Ensures responsiveness */
+}
+
+.school__logo {
+    width: 150px;  /* Adjust size as needed */
+    height: auto;  /* Maintains aspect ratio */
+    object-fit: contain; /* Ensures images don’t get distorted */
+}
+
+/* --------------------------------------- */
+/* ----- Clients ----- */
+/* --------------------------------------- */
+
 .client__logos {
     display: flex;
     justify-content: space-between;
