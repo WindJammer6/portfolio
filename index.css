@@ -602,6 +602,7 @@ table th {
     text-align: left;
     border-bottom: 2px solid #555555;
     cursor: pointer; /* Indicate interactivity */
+    border: 1px solid #555; /* Column borders */
 }
 
 /* Table rows */
@@ -609,6 +610,12 @@ td {
     padding: 10px;
     border-bottom: 1px solid #555555;
     color: #DDDDDD; /* Light grey text */
+    border: 1px solid #555; /* Column borders */
+}
+
+/* Make sure last column doesn't have extra border */
+th:last-child, td:last-child {
+    border-right: none;
 }
 
 /* Alternating row colors */
