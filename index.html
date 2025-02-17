@@ -387,10 +387,10 @@
   <script>
     // Load Data from JSON Using JavaScript for Service Programmes and Events
     document.addEventListener("DOMContentLoaded", function () {
-        fetch("json/academic_competitions_and_events.json")  // Load data from JSON file
+        fetch("json/service_programmes_and_events.json")  // Load data from JSON file
             .then(response => response.json())
             .then(data => {
-                const tableBody = document.querySelector("#competitions-table tbody");
+                const tableBody = document.querySelector("#service-programmes-table tbody");
                 data.forEach(entry => {
                     let row = document.createElement("tr");
                     if (entry.highlight) row.classList.add("highlight"); // Apply highlight if needed
@@ -405,10 +405,10 @@
   <script>
     // Load Data from JSON Using JavaScript for Leadership Programmes and Events
     document.addEventListener("DOMContentLoaded", function () {
-        fetch("json/academic_competitions_and_events.json")  // Load data from JSON file
+        fetch("json/leadership_programmes_and_events.json")  // Load data from JSON file
             .then(response => response.json())
             .then(data => {
-                const tableBody = document.querySelector("#competitions-table tbody");
+                const tableBody = document.querySelector("#leadership-programmes-table tbody");
                 data.forEach(entry => {
                     let row = document.createElement("tr");
                     if (entry.highlight) row.classList.add("highlight"); // Apply highlight if needed
