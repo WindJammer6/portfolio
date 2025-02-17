@@ -331,18 +331,6 @@ body:not(.user-is-tabbing) a:focus {
     }
 }
 
-.footer__social-links {
-    display: flex;
-    justify-content: flex-start; /* Aligns items to the left */
-    gap: 10px; /* Adds space between icons */
-    padding-left: 0; /* Remove default padding */
-    list-style: none; /* Remove bullet points */
-}
-
-.footer__social-link-item {
-    display: inline-block;
-}
-
 /* --------------------------------------- */
 /* ----- Navigation ----- */
 /* --------------------------------------- */
@@ -449,7 +437,7 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 /* --------------------------------------- */
-/* ----- Work ----- */
+/* ----- Projects ----- */
 /* --------------------------------------- */
 
 .work__box {
