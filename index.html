@@ -334,7 +334,7 @@
         fetch("academic_competitions_and_events.json")  // Load data from JSON file
             .then(response => response.json())
             .then(data => {
-                const tableBody = document.querySelector("#competitionsTable tbody");
+                const tableBody = document.querySelector("#competitions-table tbody");
                 data.forEach(entry => {
                     let row = document.createElement("tr");
                     if (entry.highlight) row.classList.add("highlight"); // Apply highlight if needed
