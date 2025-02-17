@@ -232,16 +232,7 @@
               </tr>
             </thead>
             <tbody>
-              <tr><td>Singapore Junior Water Prize</td><td>Participation</td><td>2015</td></tr>
-              <tr class="highlight"><td>National Environmental Quiz</td><td>3rd Individual and Team</td><td>2016</td></tr>
-              <tr><td>Queens Royal Commonwealth Essay Competition</td><td>Participation</td><td>2016</td></tr>
-              <tr><td>The Creative and Heuristic Applications of Science</td><td>Participation</td><td>2016</td></tr>
-              <tr><td>American Mathematics Competition</td><td>Participation</td><td>2017</td></tr>
-              <tr class="highlight"><td>Australian Mathematics Competition (Junior)</td><td>High Distinction</td><td>2016</td></tr>
-              <tr><td>Australian Mathematics Competition (Intermediate)</td><td>Distinction</td><td>2017</td></tr>
-              <tr class="highlight"><td>Australian Mathematics Competition (Senior)</td><td>Distinction</td><td>2019</td></tr>
-              <tr><td>Australian Mathematics Competition (Senior)</td><td>Credit</td><td>2020</td></tr>
-              <tr class="highlight"><td>National Science Challenge</td><td>2nd Place</td><td>2017</td></tr>
+              <!-- Data will be inserted here dynamically -->
             </tbody>
           </table>
         </div>
@@ -304,7 +295,7 @@
   <footer role="contentinfo" class="footer">
     <div class="row">
       <!-- Update the links to point to your accounts -->
-      <ul class="footer__social-links">
+      <!-- <ul class="footer__social-links">
         <li class="footer__social-link-item">
           <a href="https://github.com/WindJammer6" title="Link to Github Profile">
             <img src="./images/github.svg" class="footer__social-image" alt="Github">
@@ -333,7 +324,28 @@
   <a href="#top" class="back-to-top" title="Back to Top">
     <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
   </a>
+  
   <script src="./index.js"></script>
+
+
+  <script>
+    // Load Data from JSON Using JavaScript
+    document.addEventListener("DOMContentLoaded", function () {
+        fetch("academic_competitions_and_events.json")  // Load data from JSON file
+            .then(response => response.json())
+            .then(data => {
+                const tableBody = document.querySelector("#competitionsTable tbody");
+                data.forEach(entry => {
+                    let row = document.createElement("tr");
+                    if (entry.highlight) row.classList.add("highlight"); // Apply highlight if needed
+                    row.innerHTML = `<td>${entry.event}</td><td>${entry.award}</td><td>${entry.year}</td>`;
+                    tableBody.appendChild(row);
+                });
+            })
+            .catch(error => console.error("Error loading competition data:", error));
+    });
+    </script>
+  
 </body>
 
 </html>
