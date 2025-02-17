@@ -1,12 +1,7 @@
 [
-    {"event": "Singapore Junior Water Prize", "award": "Participation", "year": "2015"},
-    {"event": "National Environmental Quiz", "award": "3rd Individual and Team", "year": "2016", "highlight": true},
-    {"event": "Queens Royal Commonwealth Essay Competition", "award": "Participation", "year": "2016"},
-    {"event": "The Creative and Heuristic Applications of Science", "award": "Participation", "year": "2016"},
-    {"event": "American Mathematics Competition", "award": "Participation", "year": "2017"},
-    {"event": "Australian Mathematics Competition (Junior)", "award": "High Distinction", "year": "2016", "highlight": true},
-    {"event": "Australian Mathematics Competition (Intermediate)", "award": "Distinction", "year": "2017"},
-    {"event": "Australian Mathematics Competition (Senior)", "award": "Distinction", "year": "2019", "highlight": true},
-    {"event": "Australian Mathematics Competition (Senior)", "award": "Credit", "year": "2020"},
-    {"event": "National Science Challenge", "award": "2nd Place", "year": "2017", "highlight": true}
+    {"event": "UNSW Global Australia ICAS Science", "award": "Credit", "year": "2016", "highlight": true},
+    {"event": "UNSW Global Australia ICAS Science", "award": "Credit", "year": "2017", "highlight": true},
+    {"event": "NiCE Hack Hackathon", "award": "4th", "year": "2024", "highlight": true},
+    {"event": "SUTD What The Hack (WTH) Hackathon", "award": "Participation", "year": "2024"},
+    {"event": "RAG 'n' ROLL Amp up Search with Snowflake & Mistral Hackathon", "award": "Participation", "year": "2025"},
 ]
