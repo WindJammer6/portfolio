@@ -632,11 +632,6 @@ tr.highlight {
     background-color: #444444 !important; /* Medium grey */
 }
 
-/* Remove hover effect */
-tr:hover {
-    background-color: inherit !important;
-}
-
 /* Scrollbar (Optional) */
 .table-container::-webkit-scrollbar {
     width: 8px;
