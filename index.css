@@ -260,6 +260,12 @@ body:not(.user-is-tabbing) a:focus {
     background: transparent;
 }
 
+.btn-container {
+    display: flex;  /* Makes buttons align in a row */
+    justify-content: flex-start; /* Aligns to the left */
+    gap: 10px; /* Adds spacing between buttons */
+}
+
 .link__text {
     position: relative;
     display: inline-block;
