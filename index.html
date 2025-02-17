@@ -331,7 +331,7 @@
   <script>
     // Load Data from JSON Using JavaScript
     document.addEventListener("DOMContentLoaded", function () {
-        fetch("academic_competitions_and_events.json")  // Load data from JSON file
+        fetch("json/academic_competitions_and_events.json")  // Load data from JSON file
             .then(response => response.json())
             .then(data => {
                 const tableBody = document.querySelector("#competitions-table tbody");
