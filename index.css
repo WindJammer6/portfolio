@@ -557,6 +557,62 @@ body:not(.user-is-tabbing) a:focus {
     margin: 5px 0;
 }
 
+/* Ensure table section is centered */
+.competitions {
+    width: 80%;
+    margin: auto;
+    font-family: Arial, sans-serif;
+}
+
+/* Table container with scrollable area */
+.table-container {
+    max-height: 400px; /* Set fixed height */
+    overflow-y: auto; /* Enable vertical scrolling */
+    border: 1px solid #ccc;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Header row */
+thead tr {
+    background-color: #007BFF;
+    color: white;
+    position: sticky;
+    top: 0;
+}
+
+/* Header text */
+th {
+    padding: 10px;
+    text-align: left;
+    cursor: pointer; /* Make headers clickable */
+}
+
+/* Table rows */
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Alternating row color */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Highlight special rows */
+tr.highlight {
+    background-color: #e8f5e9; /* Light green */
+}
+
+/* Hover effect */
+tr:hover {
+    background-color: #f1f1f1;
+}
+
 
 /* --------------------------------------- */
 /* ----- Clients ----- */
