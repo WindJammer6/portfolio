@@ -582,6 +582,8 @@ body:not(.user-is-tabbing) a:focus {
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
     background-color: #222222; /* Dark background */
+    padding: 10px; /* Adds some spacing inside */
+    margin-bottom: 25px; /* Space between table and next title */
 }
 
 /* Table styling */
