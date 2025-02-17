@@ -239,6 +239,44 @@
       </div>
     </section>
 
+        <h3>Programmes and Events (Service)</h3>
+        
+        <div class="table-container">
+          <table id="service-programmes-table">
+            <thead>
+              <tr>
+                <th onclick="sortTable(0)">Events Name ▲</th>
+                <th onclick="sortTable(1)">Award ▲</th>
+                <th onclick="sortTable(2)">Year ▲</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Data will be inserted here dynamically -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+        <h3>Programmes and Events (Leadership)</h3>
+        
+        <div class="table-container">
+          <table id="leadership-programmes-table">
+            <thead>
+              <tr>
+                <th onclick="sortTable(0)">Events Name ▲</th>
+                <th onclick="sortTable(1)">Award ▲</th>
+                <th onclick="sortTable(2)">Year ▲</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Data will be inserted here dynamically -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
     <!-- ***** About ***** -->
 
     <section class="about" id="about">
@@ -329,7 +367,43 @@
 
 
   <script>
-    // Load Data from JSON Using JavaScript
+    // Load Data from JSON Using JavaScript for Academic Competitions and Events
+    document.addEventListener("DOMContentLoaded", function () {
+        fetch("json/academic_competitions_and_events.json")  // Load data from JSON file
+            .then(response => response.json())
+            .then(data => {
+                const tableBody = document.querySelector("#competitions-table tbody");
+                data.forEach(entry => {
+                    let row = document.createElement("tr");
+                    if (entry.highlight) row.classList.add("highlight"); // Apply highlight if needed
+                    row.innerHTML = `<td>${entry.event}</td><td>${entry.award}</td><td>${entry.year}</td>`;
+                    tableBody.appendChild(row);
+                });
+            })
+            .catch(error => console.error("Error loading competition data:", error));
+    });
+    </script>
+
+  <script>
+    // Load Data from JSON Using JavaScript for Service Programmes and Events
+    document.addEventListener("DOMContentLoaded", function () {
+        fetch("json/academic_competitions_and_events.json")  // Load data from JSON file
+            .then(response => response.json())
+            .then(data => {
+                const tableBody = document.querySelector("#competitions-table tbody");
+                data.forEach(entry => {
+                    let row = document.createElement("tr");
+                    if (entry.highlight) row.classList.add("highlight"); // Apply highlight if needed
+                    row.innerHTML = `<td>${entry.event}</td><td>${entry.award}</td><td>${entry.year}</td>`;
+                    tableBody.appendChild(row);
+                });
+            })
+            .catch(error => console.error("Error loading competition data:", error));
+    });
+    </script>
+
+  <script>
+    // Load Data from JSON Using JavaScript for Leadership Programmes and Events
     document.addEventListener("DOMContentLoaded", function () {
         fetch("json/academic_competitions_and_events.json")  // Load data from JSON file
             .then(response => response.json())
