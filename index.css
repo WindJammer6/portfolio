@@ -590,15 +590,10 @@ thead tr {
 
 /* Header text */
 th {
-    padding: 12px;
-    text-align: left;
-    cursor: pointer;
+    background-color: #f0f0f0 !important;  /* Light grey background */
+    color: black !important;  /* Black text */
     font-weight: bold;
-}
-
-/* Sortable headers - highlight on hover */
-th:hover {
-    background-color: #003399;
+    cursor: pointer; /* Make it clear that it's clickable */
 }
 
 /* Table rows */
