@@ -41,3 +41,32 @@ window.addEventListener("scroll", () => {
     alterStyles(isBackToTopRendered);
   }
 });
+
+
+/* -----------------------------------------
+   Function to sort the table when clicking headers
+ ---------------------------------------- */
+function sortTable(n) {
+    let table = document.getElementById("competitions-table");
+    let rows = Array.from(table.rows).slice(1);
+    let switching = true;
+    let direction = "asc";
+
+    while (switching) {
+        switching = false;
+        for (let i = 1; i < rows.length - 1; i++) {
+            let x = rows[i].cells[n].textContent.toLowerCase();
+            let y = rows[i + 1].cells[n].textContent.toLowerCase();
+
+            if ((direction === "asc" && x > y) || (direction === "desc" && x < y)) {
+                rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                switching = true;
+            }
+        }
+        if (!switching && direction === "asc") {
+            direction = "desc";
+            switching = true;
+        }
+    }
+}
+
