@@ -511,6 +511,35 @@ body:not(.user-is-tabbing) a:focus {
     }
 }
 
+/* ----- Video Styling ----- */
+
+.work__video-box {
+    margin-bottom: var(--gutter-normal);
+    width: 100%; /* Ensures the video is responsive */
+    max-width: 100%; /* Prevents overflow */
+}
+
+@media(min-width: 901px) {
+    .work__video-box {
+        flex: 1;
+        margin: 0 0 0 10rem;
+    }
+}
+
+/* Ensure video is responsive */
+.work__video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media(max-width: 900px) {
+    .work__video {
+        height: auto;
+    }
+}
+
+
 /* --------------------------------------- */
 /* ----- Academic Information ----- */
 /* --------------------------------------- */
