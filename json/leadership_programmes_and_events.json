@@ -1,9 +1,9 @@
 [
-    {"event": "Class Committee - Cyberwellness Champ", "award": "Participation", "year": "2016"},
-    {"event": "Student Councilor (Junior)", "award": "Participation", "year": "2016"},
-    {"event": "Student Councilor Executive Committee", "award": "Participation", "year": "2017, 2018"},
-    {"event": "Choir Sectional Leader of Bass", "award": "Participation", "year": "2017, 2018"},
+    {"event": "Class Committee - Cyberwellness Champ", "award": "Class Committee", "year": "2016"},
+    {"event": "Student Councilor (Junior)", "award": "Participant", "year": "2016"},
+    {"event": "Student Councilor Executive Committee", "award": "Executive Committee", "year": "2017, 2018"},
+    {"event": "Choir Sectional Leader of Bass", "award": "Sectional Leader", "year": "2017, 2018"},
     {"event": "Student Leadership Camp", "award": "Organising Committee", "year": "2017"},
     {"event": "Student Council Camp", "award": "Organising Committee", "year": "2017"},
-    {"event": "Sustainable Development Youth Convention", "award": "Participation", "year": "2017"}
+    {"event": "Sustainable Development Youth Convention", "award": "Participant", "year": "2017"}
 ]
